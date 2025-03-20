@@ -1,0 +1,60 @@
+body {
+	font-family: Tahoma, Verdana, sans-serif;
+	color: #333;
+	margin: 0 auto;
+}
+
+.main-header {
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-right: 5%;
+	background: #a23a00;
+	color: white;
+	clip-path: polygon(100% 0, 100% 0%, 0% 100%, 0 100%, 0 0);
+}
+
+.main-footer {
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-right: 5%;
+	background: #a23a00;
+	color: white;
+	clip-path: polygon(100% 0, 100% 100%, 0 100%);
+	text-align: end;
+}
+
+.order-menu-title {
+	background: #a92a00;
+	color: white;
+	text-align: center;
+	font-size: 2.5em;
+	z-index: 1;
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.order-menu {
+	background: #fff89b;
+	color: black;
+	text-align: center;
+	font-size: 1em;
+	margin-top: -50px;
+}
+
+.orderSection {
+	margin-bottom: 26%;
+}
+
+.pizzaContent {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+}
+
+img {
+	width: 30%;
+	height: 20%;
+}

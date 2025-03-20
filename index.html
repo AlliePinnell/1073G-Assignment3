@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Metadata and linking stylesheets -->
+        <meta charset="utf-8">
+        <title>Home | Allie's Pizza</title>
+        <meta name="author" content="Allie Pinnell">
+        <meta name="description" content="">
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <section class="main-header">
+                <img class="main-logo" src="img/pizzalogo.png" alt="Allie's Pizza Logo">
+            </section>
+        </header>
+        
+        <main>
+            <section class="pizzaContent">
+                <section class="pizzaOrder">
+                    <!-- Order menu title -->
+                    <section class="order-menu-title">
+                        <h1>~ORDER MENU~</h1>
+                    </section>
+
+                    <!-- Order form section -->
+                    <section class="order-menu">
+                        <form id="pizzaSite">
+                            <input type="hidden" name="form_sent" value="1">
+
+                            <!-- Contact Information Section -->
+                            <section class="orderSection">
+                                <h3>Contact Information</h3>
+                                <div>
+                                    <label for="fName">First Name:</label>
+                                    <input type="text" name="fName" id="fName" size="25" maxlength="50" placeholder="Type first name" required>
+                                </div>
+                                <div>
+                                    <label for="lName">Last Name:</label>
+                                    <input type="text" name="lName" id="lName" size="25" maxlength="50" placeholder="Type last name" required>
+                                </div>
+                                <div>
+                                    <label for="phone">Phone Number:</label>
+                                    <input id="phone" type="tel" name="phone" placeholder="123-456-7890" required>
+                                </div>
+                                <div>
+                                    <label for="address">Address:</label>
+                                    <input id="address" type="text" name="address" placeholder="123 Example Street" required>
+                                </div>
+                                <div>
+                                    <label for="email">Email:</label>
+                                    <input id="email" type="email" name="email" placeholder="example@example.com" required>
+                                </div>
+                            </section>
+
+                            <!-- Pizza Information Section -->
+                            <section class="orderSection">
+                                <h3>Pizza Information</h3>
+                                <div>
+                                    <label for="pizzaNum">Number of Pizzas:</label>
+                                    <input type="number" name="pizzaNum" id="pizzaNum" min="1" max="10" placeholder="1-10" required>
+                                </div>
+                                <div>
+                                    <label for="size">Size:</label>
+                                    <select name="size" id="size">
+                                        <option value="Small">Small (6 Slices)</option>
+                                        <option value="Medium">Medium (8 Slices)</option>
+                                        <option value="Large">Large (10 Slices)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label>Crust Shape:</label>
+                                </div>
+                                <div>
+                                    <label for="square">Square</label>
+                                    <input type="radio" name="crustShape" id="square" value="Square">
+                                </div>
+                                <div>
+                                    <label for="circle">Circle</label>
+                                    <input type="radio" name="crustShape" id="circle" value="Circle">
+                                </div>
+                                <div>
+                                    <label>Toppings:</label>
+                                </div>
+                                <div>
+                                    <label for="Pepperoni">Pepperoni</label>
+                                    <input type="checkbox" name="toppings" id="Pepperoni" value="Pepperoni">
+                                </div>
+                                <div>
+                                    <label for="Mushrooms">Mushrooms</label>
+                                    <input type="checkbox" name="toppings" id="Mushrooms" value="Mushrooms">
+                                </div>
+                                <div>
+                                    <label for="Chicken">Chicken</label>
+                                    <input type="checkbox" name="toppings" id="Chicken" value="Chicken">
+                                </div>
+                                <div>
+                                    <label for="Anchovies">Anchovies</label>
+                                    <input type="checkbox" name="toppings" id="Anchovies" value="Anchovies">
+                                </div>
+                                <div>
+                                    <label for="Sausage">Sausage</label>
+                                    <input type="checkbox" name="toppings" id="Sausage" value="Sausage">
+                                </div>
+                                <div>
+                                    <label for="Bacon">Bacon</label>
+                                    <input type="checkbox" name="toppings" id="Bacon" value="Bacon">
+                                </div>
+                                <div>
+                                    <label for="Olives">Olives</label>
+                                    <input type="checkbox" name="toppings" id="Olives" value="Olives">
+                                </div>
+                                <div>
+                                    <label for="BellPeppers">Bell Peppers</label>
+                                    <input type="checkbox" name="toppings" id="BellPeppers" value="Bell Peppers">
+                                </div>
+                                <div>
+                                    <label for="Cheese">Cheese</label>
+                                    <input type="checkbox" name="toppings" id="Cheese" value="Cheese">
+                                </div>
+                                <div>
+                                    <label for="crust">Crust Type:</label>
+                                    <select name="crust" id="crust">
+                                        <option value="Standard">Standard</option>
+                                        <option value="Stuffed">Stuffed</option>
+                                        <option value="Thin">Thin</option>
+                                        <option value="Deep Dish">Deep Dish</option>
+                                        <option value="Gluten-Free">Gluten-Free</option>
+                                        <option value="Cauliflower">Cauliflower</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="method">Method:</label>
+                                    <select name="method" id="method">
+                                        <option value="Eat In">Eat In</option>
+                                        <option value="Pick Up">Pick Up</option>
+                                        <option value="Delivery">Delivery</option>
+                                    </select>
+                                </div>
+                            </section>
+
+                            <section>
+                                <button type="submit">Order</button>
+                                <p id="orderStatus"></p>
+                            </section>
+                        </form>
+                    </section>
+                </section>
+
+                <!-- Order Confirmation Section -->
+                <section class="pizzaOrder">
+                    <section class="order-menu-title">
+                        <h1>~ORDER CONFIRM~</h1>
+                    </section>
+                    <section class="order-menu">
+                        <section class="orderSection">
+                            <h3>Order Summary</h3>
+                            <p id="orderOutput"></p>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </main>
+
+        <section class="main-footer">
+            <p id="myStudentId"></p>
+        </section>
+    </body>
+</html>
